@@ -1,0 +1,737 @@
+/* Game-specific skin. The application shell and other games stay untouched. */
+.data-state-label {
+  display: inline-block;
+  margin-top: 7px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.data-state-label[data-state='current'] {
+  color: #526d36;
+}
+.data-state-label[data-state='outdated'] {
+  color: #963e15;
+}
+.data-state-label[data-state='error'] {
+  color: #8c2e20;
+}
+.data-state-label[data-state='checking'] {
+  color: #665239;
+}
+.data-status-details {
+  font-size: 10px;
+  line-height: 1.8;
+  margin-top: 12px;
+  color: #60472a;
+}
+.data-status-details summary {
+  cursor: pointer;
+  width: fit-content;
+}
+.data-status-details p {
+  margin-top: 8px;
+}
+.main-column.aoe-theme .data-status-details .data-status-footnote {
+  margin-top: 10px;
+  padding-top: 8px;
+}
+.main-column.aoe-theme .data-check-error {
+  font-size: 11px;
+  line-height: 1.8;
+  margin-top: 10px;
+  color: #852619;
+}
+.unit-matchups {
+  margin: 10px 0 15px;
+  font-size: 11px;
+  line-height: 1.8;
+}
+.unit-matchups h5 {
+  font-size: 10px;
+  font-weight: 600;
+  margin: 9px 0 5px;
+}
+.unit-role {
+  color: #b8c8ac;
+}
+.unit-no-bonus {
+  color: #9fac96;
+  font-size: 10px;
+}
+.civ-card .unit-attack-bonuses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 8px;
+  list-style: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.civ-card .unit-attack-bonuses li {
+  display: block;
+  font-size: 10px;
+  padding: 3px 7px;
+  color: #d1dfc5;
+  background: #263023;
+  border: 1px solid #43503a;
+  border-radius: 2px;
+}
+.unit-attack-bonuses strong {
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+}
+.unit-special-attacks {
+  margin-top: 8px;
+  font-size: 10px;
+}
+.unit-special-attacks summary {
+  cursor: pointer;
+}
+.civ-card .unit-special-attacks ul {
+  padding: 5px 0 0 15px;
+  border: 0;
+  list-style: disc;
+}
+.civ-card .unit-special-attacks li {
+  display: list-item;
+  font-size: 10px;
+}
+.main-column.aoe-theme .unit-role {
+  color: #4c3822;
+}
+.main-column.aoe-theme .unit-no-bonus {
+  color: #695033;
+}
+.main-column.aoe-theme .unit-matchups h5 {
+  color: #60401e;
+}
+.main-column.aoe-theme .civ-card .unit-attack-bonuses li {
+  color: #493217;
+  background: #d2ae7266;
+  border-color: #ad844b88;
+}
+.main-column.aoe-theme .unit-special-attacks {
+  color: #5e4529;
+}
+.main-column.aoe-theme .unit-special-attacks li {
+  color: #5e4529;
+}
+.civ-access {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 11px;
+  margin: 12px 0;
+}
+.unit-upgrades,
+.civ-details {
+  font-size: 11px;
+  line-height: 1.8;
+  margin: 12px 0;
+}
+.unit-upgrades summary,
+.civ-details summary {
+  cursor: pointer;
+  padding: 5px 0;
+}
+.unit-upgrades > .unit-profile {
+  margin-top: 10px;
+}
+.civ-details h4 {
+  font-weight: 600;
+  margin: 15px 0 5px;
+}
+.civ-details p {
+  margin-bottom: 8px;
+}
+.civ-card .civ-details ul {
+  padding: 0 0 0 15px;
+  border: 0;
+  list-style: disc;
+}
+.civ-card .civ-details li {
+  display: list-item;
+}
+.access-source a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.expansion-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 10px;
+}
+.expansion-filter select {
+  font: inherit;
+  font-size: 12px;
+  border: 1px solid #8f6d38;
+  background: #f4e0b7;
+  color: #332516;
+  padding: 9px;
+  border-radius: 1px;
+  min-width: 0;
+  width: 100%;
+}
+.aoe-resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 0 0 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #a3834d;
+  font-size: 11px;
+  color: #533a20;
+}
+.aoe-resources h2 {
+  width: 100%;
+  font-size: 16px;
+}
+.aoe-resources a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.aoe-resources a:hover {
+  color: #852f1d;
+}
+.main-column.aoe-theme .civ-access {
+  color: #604426;
+}
+.main-column.aoe-theme .civ-details {
+  color: #4c3721;
+  border-top: 1px solid #a5844e66;
+  padding-top: 10px;
+}
+.main-column.aoe-theme .civ-details li {
+  color: #4c3721;
+}
+.main-column.aoe-theme .filter-bottom {
+  align-items: flex-start;
+}
+.main-column.aoe-theme .filter-bottom > span {
+  padding-top: 10px;
+  flex-shrink: 0;
+}
+.main-column.aoe-theme .filter-panel .search-input {
+  flex: 1;
+}
+.main-column.aoe-theme .filter-panel .expansion-filter {
+  width: 240px;
+  max-width: 100%;
+  color: #604426;
+}
+@media (max-width: 560px) {
+  .main-column.aoe-theme .filter-panel .expansion-filter {
+    width: 100%;
+  }
+}
+.main-column.aoe-theme {
+  color-scheme: light;
+  --primary: #79501f;
+  --background: #e0bc82;
+  --foreground: #302316;
+  --aoe-ink: #302316;
+  --aoe-muted: #5c452c;
+  --aoe-border: #8a6130;
+  color: var(--aoe-ink);
+  background-color: #d3ad74;
+  background-image:
+    linear-gradient(#f5dbaa26, #f5dbaa26), url('/aoe2/parchment.jpg');
+  background-repeat: repeat;
+  min-height: 100dvh;
+}
+
+.main-column.aoe-theme .topbar {
+  background: #3e3024;
+  border-bottom: 3px ridge #ac8649;
+  color: #f3dfb8;
+}
+.main-column.aoe-theme .topbar :is(.muted, .topbar-right) {
+  color: #ddc79f;
+}
+.main-column.aoe-theme .topbar .slash {
+  color: #9a825e;
+}
+.main-column.aoe-theme .topbar .status-dot {
+  background: #d7b76b;
+}
+.main-column.aoe-theme .avatar {
+  background: #6a472b;
+  border-color: #b8904c;
+  color: #f5dfb2;
+}
+.main-column.aoe-theme footer {
+  color: #594026;
+}
+.main-column.aoe-theme :focus-visible {
+  outline-color: #184b68;
+  outline-width: 3px;
+}
+.main-column.aoe-theme :is(.back-link, .eyebrow, .muted, .section-heading p) {
+  color: var(--aoe-muted);
+}
+.main-column.aoe-theme .back-link {
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+.main-column.aoe-theme .back-link:hover {
+  color: #742e20;
+}
+.main-column.aoe-theme :is(h1, h2, h3) {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+.main-column.aoe-theme h1 {
+  font-size: clamp(29px, 3vw, 42px);
+  font-weight: 500;
+  letter-spacing: -1.2px;
+  text-shadow: 0 1px #fae8c6;
+}
+.main-column.aoe-theme .page-heading {
+  margin-bottom: 24px;
+}
+.main-column.aoe-theme .page-heading p {
+  color: #543e27;
+  font-size: 13px;
+}
+.main-column.aoe-theme .eyebrow {
+  letter-spacing: 1.8px;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.aoe-masthead {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 27px;
+}
+.aoe-seal {
+  width: 55px;
+  height: 64px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #79372e, #481b20);
+  color: #f1d18c;
+  font:
+    36px Georgia,
+    serif;
+  border: 3px ridge #c6a260;
+  outline: 1px solid #775128;
+  box-shadow: 2px 3px 5px #40271040;
+  border-radius: 2px 2px 25px 25px;
+  text-shadow: 1px 2px #271512;
+}
+.aoe-game-title {
+  display: block;
+  font:
+    small-caps 25px Georgia,
+    serif;
+  letter-spacing: 0.5px;
+  color: #3d2a18;
+}
+.aoe-game-title > span {
+  color: #7b331f;
+  font-size: 31px;
+}
+.aoe-edition {
+  display: block;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  margin-top: 6px;
+  color: #674a29;
+}
+.aoe-masthead-rule {
+  flex: 1;
+  height: 4px;
+  border-top: 1px solid #8b642f;
+  border-bottom: 1px solid #f4dca8;
+  margin-left: 15px;
+  position: relative;
+}
+.aoe-masthead-rule::after {
+  content: '◆';
+  position: absolute;
+  right: 0;
+  top: -10px;
+  color: #8a5b28;
+  font-size: 12px;
+}
+
+.main-column.aoe-theme .pk-button {
+  font-family: Georgia, 'Times New Roman', serif;
+  border: 1px solid #765126;
+  border-radius: 2px;
+  box-shadow:
+    inset 0 0 0 1px #ead09b80,
+    0 1px 2px #49301a30;
+  font-weight: 600;
+}
+.main-column.aoe-theme .pk-button-primary {
+  background: linear-gradient(#774332, #54291e);
+  color: #fff0cd;
+  border-color: #58371d;
+  text-shadow: 0 1px #301b13;
+}
+.main-column.aoe-theme .pk-button-primary:hover {
+  background: linear-gradient(#92513b, #6c3326);
+}
+.main-column.aoe-theme .pk-button-outline {
+  background: linear-gradient(#f2dbac, #d5b27a);
+  color: #443019;
+}
+.main-column.aoe-theme .pk-button-outline:hover {
+  background: #f2d9a4;
+}
+.main-column.aoe-theme .pk-button-ghost {
+  background: #ddbd8590;
+  border-color: #9e7b45;
+  color: #4d371e;
+  box-shadow: inset 0 0 0 1px #f6e2b755;
+}
+.main-column.aoe-theme .pk-button-ghost:hover {
+  background: #f2d8a4;
+}
+.main-column.aoe-theme .pk-button[aria-pressed='true'] {
+  background: linear-gradient(#60603b, #41432a);
+  color: #fff1c9;
+  border-color: #4f492b;
+}
+.main-column.aoe-theme .pk-button[aria-pressed='true'] svg {
+  color: #f3d68d;
+}
+
+.main-column.aoe-theme .data-status {
+  background: #f2dbac80;
+  border: 1px solid #a17a40;
+  border-left: 4px solid #8a622d;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px #f6e5bc70;
+  padding: 17px 20px;
+}
+.main-column.aoe-theme .data-status-heading > svg {
+  color: #785126;
+}
+.main-column.aoe-theme .data-status h2 {
+  color: #3c2c19;
+  font-size: 16px;
+}
+.main-column.aoe-theme .data-status-heading p {
+  color: #60492c;
+  font-size: 11px;
+}
+.main-column.aoe-theme .data-status-message {
+  color: #4e3e29;
+  font-size: 11px;
+  padding-block: 10px;
+}
+.main-column.aoe-theme .data-update-available strong {
+  color: #76321b;
+}
+.main-column.aoe-theme .data-status-message .data-check-error {
+  color: #852619;
+}
+.main-column.aoe-theme .data-status-footnote {
+  border-color: #a9895466;
+  color: #634b2c;
+  font-size: 10px;
+}
+.main-column.aoe-theme .data-status-footnote a {
+  color: #563618;
+}
+.main-column.aoe-theme .dataset-note {
+  background: #c6a16b66;
+  border: 1px solid #9d773f88;
+  border-radius: 2px;
+  color: #574025;
+  padding: 11px 15px;
+}
+.main-column.aoe-theme .dataset-note strong {
+  color: #3c2d1b;
+}
+.main-column.aoe-theme .dataset-note svg {
+  color: #68451e;
+}
+
+.main-column.aoe-theme .filter-panel {
+  background: linear-gradient(#ecd09b99, #dcba8299);
+  border: 3px ridge #a3824b;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px #51371920;
+  padding: 20px;
+}
+.aoe-filter-heading {
+  font:
+    19px Georgia,
+    serif;
+  margin: 0 0 17px;
+}
+.main-column.aoe-theme .search-input {
+  background: #f4e0b7;
+  border: 1px solid #8f6d38;
+  border-radius: 1px;
+  color: #674c2c;
+  box-shadow: inset 1px 2px 3px #62431f24;
+}
+.main-column.aoe-theme .search-input input {
+  color: #332516;
+  height: 42px;
+}
+.main-column.aoe-theme .search-input input::placeholder {
+  color: #795f3c;
+}
+.main-column.aoe-theme .checkbox-label {
+  color: #4d381e;
+  font-size: 12px;
+}
+.main-column.aoe-theme input[type='checkbox'] {
+  accent-color: #625332;
+}
+.main-column.aoe-theme .filter-bottom > span {
+  color: #654620;
+  font-weight: 700;
+}
+.main-column.aoe-theme .filter-options {
+  gap: 7px;
+}
+.main-column.aoe-theme .section-heading {
+  border-bottom: 1px solid #93703e;
+  padding-bottom: 13px;
+}
+.main-column.aoe-theme .section-heading h2 {
+  color: #382715;
+  font-size: 22px;
+}
+.main-column.aoe-theme .section-heading h2 span {
+  color: #5a3a18;
+  background: #ecd09c;
+  border-color: #a37b3e;
+  border-radius: 1px;
+}
+
+.main-column.aoe-theme .civ-grid {
+  gap: 22px;
+}
+.main-column.aoe-theme .civ-card {
+  position: relative;
+  padding: 22px;
+  background: linear-gradient(110deg, #f3dfb5bb, #e7c99199);
+  border: 1px solid #88602d;
+  border-top: 3px solid #8a5c2a;
+  border-radius: 2px;
+  box-shadow:
+    inset 0 0 0 3px #f5dfad60,
+    0 3px 8px #51361e20;
+}
+.main-column.aoe-theme .civ-card::before,
+.main-column.aoe-theme .civ-card::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #8d6532;
+  border: 1px solid #d6b16c;
+  border-radius: 50%;
+  top: 6px;
+}
+.main-column.aoe-theme .civ-card::before {
+  left: 6px;
+}
+.main-column.aoe-theme .civ-card::after {
+  right: 6px;
+}
+.main-column.aoe-theme .civ-card-top {
+  gap: 13px;
+  margin-bottom: 12px;
+}
+.main-column.aoe-theme .civ-card-heading h3 {
+  color: #382313;
+  font-size: 25px;
+  font-weight: 500;
+  text-shadow: 0 1px #fff1cd;
+}
+.main-column.aoe-theme .civ-focus {
+  color: #694a28;
+  font-size: 11px;
+}
+.main-column.aoe-theme .civ-card > p {
+  color: #513c25;
+  font-size: 12px;
+}
+.main-column.aoe-theme .civ-unit-label {
+  color: #674722;
+  font-size: 9px;
+  letter-spacing: 1.1px;
+}
+.main-column.aoe-theme .difficulty {
+  color: #624a2e;
+  font-size: 9px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.main-column.aoe-theme .unit-profile {
+  background: #ad844d24;
+  border-block: 1px solid #a5844e66;
+  padding: 12px 0;
+}
+.main-column.aoe-theme .unit-portrait {
+  background: linear-gradient(110deg, #0983a3, #07627f);
+  border: 2px ridge #c4a367;
+  box-shadow: 1px 2px 3px #553b2333;
+}
+.main-column.aoe-theme .civ-card .unit-stats {
+  border: none;
+}
+.main-column.aoe-theme .unit-stats dt {
+  color: #674a2c;
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 0.7px;
+}
+.main-column.aoe-theme .unit-stats dd {
+  font-family: Georgia, serif;
+  color: #342615;
+  font-size: 19px;
+}
+.main-column.aoe-theme .civ-card .resource-cost li {
+  color: #3d2b16;
+  font-size: 13px;
+}
+.main-column.aoe-theme .unit-building {
+  color: #594124;
+  font-size: 10px;
+}
+.main-column.aoe-theme .civ-card .base-stats-note {
+  color: #674e30;
+  font-size: 9px;
+}
+.main-column.aoe-theme .civ-card .civ-strengths {
+  border-top: 1px solid #ad8a5066;
+}
+.main-column.aoe-theme .civ-card .civ-strengths li {
+  color: #47391f;
+  font-size: 12px;
+}
+.main-column.aoe-theme .civ-strengths svg {
+  color: #4e5b2d;
+}
+.main-column.aoe-theme .tradeoff {
+  color: #584026;
+  background: #bd925135;
+  border-left: 2px solid #9b6c34;
+  border-radius: 0;
+  font-size: 11px;
+}
+.main-column.aoe-theme .tradeoff strong {
+  color: #72451e;
+  font-weight: 700;
+}
+.main-column.aoe-theme .empty-state {
+  color: #594124;
+  border-color: #98713c;
+  background: #f0d5a180;
+  border-radius: 2px;
+}
+.main-column.aoe-theme .empty-state h2 {
+  color: #382716;
+}
+.main-column.aoe-theme .aoe-art-credit {
+  color: #60492c;
+}
+
+.main-column.aoe-theme .game-detail-banner {
+  background: linear-gradient(120deg, #713c2ce8, #4e2c21ed);
+  border: 4px ridge #ba9658;
+  border-radius: 1px;
+  color: #f6dfa9;
+}
+.main-column.aoe-theme .game-detail-banner .eyebrow {
+  color: #ecd4a0;
+}
+.main-column.aoe-theme .game-detail-banner p {
+  color: #f0d7aa;
+}
+.main-column.aoe-theme .panel {
+  background: #f2dbac99;
+  border: 2px ridge #ad884d;
+  border-radius: 1px;
+}
+.main-column.aoe-theme .tool-panel > svg {
+  color: #84552b;
+}
+.main-column.aoe-theme .tool-panel p,
+.main-column.aoe-theme .resource-list p {
+  color: #5c4327;
+}
+.main-column.aoe-theme .resource-list a {
+  color: #463017;
+  border-color: #b18e53;
+}
+.main-column.aoe-theme .resource-list a:hover {
+  color: #813120;
+}
+.main-column.aoe-theme .tag {
+  color: #593c1b;
+  background: #e9cc93;
+  border-color: #9b773c;
+}
+.compact .main-column.aoe-theme .civ-card {
+  padding: 15px;
+}
+.compact .main-column.aoe-theme .unit-profile {
+  padding-block: 8px;
+}
+
+@media (max-width: 560px) {
+  .aoe-masthead {
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+  .aoe-game-title {
+    font-size: 21px;
+  }
+  .aoe-game-title > span {
+    font-size: 26px;
+  }
+  .aoe-edition {
+    font-size: 7px;
+    letter-spacing: 0.8px;
+    line-height: 1.6;
+  }
+  .aoe-masthead-rule {
+    display: none;
+  }
+  .main-column.aoe-theme .filter-panel {
+    padding: 15px;
+  }
+  .main-column.aoe-theme .civ-card {
+    padding: 18px;
+  }
+  .main-column.aoe-theme .data-status {
+    padding: 15px;
+  }
+  .main-column.aoe-theme .data-status h2 {
+    font-size: 15px;
+  }
+  .main-column.aoe-theme .data-status-heading {
+    display: grid;
+    grid-template-columns: 19px minmax(0, 1fr);
+    align-items: start;
+  }
+  .main-column.aoe-theme .data-status-heading button {
+    grid-column: 2;
+    justify-self: start;
+    margin: 0;
+  }
+  .main-column.aoe-theme .page-heading p {
+    font-size: 12px;
+  }
+  .main-column.aoe-theme .section-heading h2 {
+    font-size: 20px;
+  }
+  .main-column.aoe-theme .unit-profile {
+    gap: 12px;
+  }
+}
