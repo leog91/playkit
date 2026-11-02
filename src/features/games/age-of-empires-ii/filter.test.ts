@@ -2,7 +2,7 @@ import { describe, it } from 'node:test'
 import assert from 'node:assert/strict'
 import { allUniqueUnits, filterCivilizations } from './filter'
 import { civilizations } from './data'
-import { civilizationExpansion, expansions } from './expansions'
+import { accessLabel, civilizationExpansion, expansions } from './expansions'
 
 describe('full civilization picker', () => {
   it('shows the full imported roster without filters', () => {
@@ -64,6 +64,17 @@ describe('full civilization picker', () => {
     assert.equal(civilizationExpansion('magyars')?.access, 'base')
     assert.equal(civilizationExpansion('bohemians')?.access, 'bundled')
     assert.equal(civilizationExpansion('armenians')?.access, 'paid')
+  })
+  it('names the required pack in every paid DLC label', () => {
+    for (const pack of expansions.filter((pack) => pack.access === 'paid')) {
+      assert.equal(accessLabel(pack), `Paid DLC: ${pack.name}`)
+    }
+    assert.equal(accessLabel(civilizationExpansion('magyars')), 'Included in DE')
+    assert.equal(
+      accessLabel(civilizationExpansion('bohemians')),
+      'Included with current DE',
+    )
+    assert.equal(accessLabel(undefined), 'Access not verified')
   })
   it('imports non-Castle unique units and distinguishes elite upgrades', () => {
     const armenians = civilizations.find((civ) => civ.id === 'armenians')!

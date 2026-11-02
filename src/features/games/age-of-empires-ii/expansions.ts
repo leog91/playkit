@@ -142,7 +142,7 @@ export function civilizationExpansion(id: string): Expansion | undefined {
 export function accessLabel(expansion: Expansion | undefined): string {
   if (!expansion) return 'Access not verified'
   return expansion.access === 'paid'
-    ? 'Paid DLC'
+    ? `Paid DLC: ${expansion.name}`
     : expansion.access === 'bundled'
       ? 'Included with current DE'
       : 'Included in DE'
